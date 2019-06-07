@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "SSDT", 2, "SgRef", "SgPeg", 0x00001000)
+DefinitionBlock ("", "SSDT", 2, "SgRef", "SgPeg", 0x00001001)
 {
     External (_SB_.PCI0.PEG0.PEGP, DeviceObj)
     External (_SB_.PCI0.PEG0.PEGP.PVID, FieldUnitObj)

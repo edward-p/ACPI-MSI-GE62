@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "SSDT", 2, "PmRef", "Cpu0Cst", 0x00003001)
+DefinitionBlock ("", "SSDT", 2, "PmRef", "Cpu0Cst", 0x00003002)
 {
     External (_PR_.C3LT, FieldUnitObj)
     External (_PR_.C3MW, FieldUnitObj)

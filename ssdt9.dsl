@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "SSDT", 1, "OptRef", "OptTabl", 0x00001000)
+DefinitionBlock ("", "SSDT", 1, "OptRef", "OptTabl", 0x00001001)
 {
     External (_PR_.CPPC, FieldUnitObj)
     External (_PR_.CPU0, ProcessorObj)

@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x01072009)
+DefinitionBlock ("", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x0107200a)
 {
     /*
      * iASL Warning: There were 16 external control methods found during

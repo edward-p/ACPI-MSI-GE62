@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "SSDT", 2, "SaSsdt", "SaSsdt ", 0x00003000)
+DefinitionBlock ("", "SSDT", 2, "SaSsdt", "SaSsdt ", 0x00003001)
 {
     /*
      * iASL Warning: There were 10 external control methods found during

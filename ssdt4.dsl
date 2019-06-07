@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "SSDT", 2, "INTEL ", "zpodd", 0x00001000)
+DefinitionBlock ("", "SSDT", 2, "INTEL ", "zpodd", 0x00001001)
 {
     External (_SB_.GGIV, MethodObj)    // 1 Arguments
     External (_SB_.PCI0.GEXP.SGEP, MethodObj)    // 3 Arguments

@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "SSDT", 2, "INTEL", "xh_rvp11", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "INTEL", "xh_rvp11", 0x00000001)
 {
     External (_SB_.PCI0.XHC_.RHUB, DeviceObj)
     External (_SB_.PCI0.XHC_.RHUB.HS01, DeviceObj)

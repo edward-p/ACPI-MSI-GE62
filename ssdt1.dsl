@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "SSDT", 2, "INTEL ", "sensrhub", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "INTEL ", "sensrhub", 0x00000001)
 {
     External (_SB_.GGOV, MethodObj)    // 1 Arguments
     External (_SB_.PCI0.I2C0.DFUD, UnknownObj)

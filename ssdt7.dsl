@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20120913 (538052883)
  */
-DefinitionBlock ("", "SSDT", 2, "CpuRef", "CpuSsdt", 0x00003000)
+DefinitionBlock ("", "SSDT", 2, "CpuRef", "CpuSsdt", 0x00003001)
 {
     External (_PR_.CPU0, ProcessorObj)
     External (_PR_.CPU1, ProcessorObj)
