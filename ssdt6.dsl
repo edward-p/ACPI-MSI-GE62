@@ -4007,8 +4007,8 @@ DefinitionBlock ("", "SSDT", 2, "SaSsdt", "SaSsdt ", 0x00003001)
             }
 
             GPPR (PION, One)
-            If ((OSYS == 0x07D9))
-            {
+            /*If ((OSYS == 0x07D9))
+            {*/
                 If ((PION == Zero))
                 {
                     P0AP = Zero
@@ -4122,11 +4122,11 @@ DefinitionBlock ("", "SSDT", 2, "SaSsdt", "SaSsdt ", 0x00003001)
                         }
                     }
                 }
-            }
+            /*}
             Else
             {
                 LKEN (PION)
-            }
+            }*/
 
             \_SB.PCI0.PEG0.LREN = \_SB.PCI0.PEG0.PEGP.LTRE /* External reference */
             \_SB.PCI0.PEG0.CEDR = One
@@ -4220,8 +4220,8 @@ DefinitionBlock ("", "SSDT", 2, "SaSsdt", "SaSsdt ", 0x00003001)
 
             \_SB.PCI0.PEG0.PEGP.LTRE = \_SB.PCI0.PEG0.LREN
             Sleep (0x0A)
-            If ((OSYS == 0x07D9))
-            {
+            /*If ((OSYS == 0x07D9))
+            {*/
                 If ((PIOF == Zero))
                 {
                     P0LD = One
@@ -4300,7 +4300,7 @@ DefinitionBlock ("", "SSDT", 2, "SaSsdt", "SaSsdt ", 0x00003001)
                         PDUB (PIOF, MBDL)
                     }
                 }
-            }
+            /*}
             Else
             {
                 Local0 = Zero
@@ -4311,7 +4311,7 @@ DefinitionBlock ("", "SSDT", 2, "SaSsdt", "SaSsdt ", 0x00003001)
                 }
 
                 LKDS (PIOF)
-            }
+            }*/
 
             GPPR (PIOF, Zero)
             If ((OSYS != 0x07D9))
