@@ -3,12 +3,13 @@ amls= dsdt.aml \
 ssdt1.aml ssdt2.aml ssdt3.aml ssdt4.aml ssdt5.aml ssdt6.aml \
 ssdt7.aml ssdt8.aml ssdt9.aml
 
-PREFIX ?= /boot
+DESTDIR ?= /
+BOOTDIR ?= boot
 
 all: $(amls) acpi_override.img
 
 install: acpi_override.img
-	cp acpi_override.img $(PREFIX)
+	install -Dm644 acpi_override.img $(DESTDIR)$(BOOTDIR)/acpi_override.img
 
 $(amls): %.aml: %.dsl
 	iasl -tc $<
