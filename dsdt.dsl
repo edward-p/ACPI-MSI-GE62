@@ -17724,13 +17724,13 @@ DefinitionBlock ("", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x0107200a)
 
         Method (_INI, 0, Serialized)  // _INI: Initialize
         {
-            OSYS = 0x07D0
+            OSYS = 0x07DF
             If (CondRefOf (\_OSI, Local0))
             {
-                If (_OSI ("Linux"))
+                /*If (_OSI ("Linux"))
                 {
                     OSYS = 0x03E8
-                }
+                }*/
 
                 If (_OSI ("Windows 2001"))
                 {
