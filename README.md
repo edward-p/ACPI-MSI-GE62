@@ -5,7 +5,7 @@ This my Laptop's DSDT/SSDTs patched by myself for Linux.
 
 __Important!!! For `MSI-GE62` only!!! Linux Only!!!__
 
-It won't be flashed into the BIOS. Using the `acpi_override` feature provided by linux kernel.
+It won't be flashed into the BIOS. Using the `acpi_override` feature provided by linux kernel instead.
 
 ### Compile and install
 
@@ -18,7 +18,7 @@ make
 sudo make install
 ```
 
-And don't forget add `initrd /boot/acpi_override.img` to your bootloader.
+And don't forget adding `initrd /boot/acpi_override.img` to your bootloader.
 
 
 ### Ptches applied
