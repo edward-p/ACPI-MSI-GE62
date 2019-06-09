@@ -80,7 +80,7 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "sensrhub", 0x00000001)
                                 If ((PGCD > Zero))
                                 {
                                     Sleep (PGCD)
-                                    OLDV = \_SB.GGOV (0x02010016)
+                                    \_SB.SGOV (0x02010016, OLDV)
                                 }
 
                                 If ((\_SB.GGOV (0x02010016) == One))
@@ -100,11 +100,11 @@ DefinitionBlock ("", "SSDT", 2, "INTEL ", "sensrhub", 0x00000001)
                                 DFUE = DerefOf (Arg3 [Zero])
                                 DFUD = DerefOf (Arg3 [One])
                                 OLDV = \_SB.GGOV (0x02010014)
-                                DFUE = \_SB.GGOV (0x02010014)
+                                \_SB.SGOV (0x02010014, DFUE)
                                 If ((DFUD > Zero))
                                 {
                                     Sleep (DFUD)
-                                    OLDV = \_SB.GGOV (0x02010014)
+                                    \_SB.SGOV (0x02010014, OLDV)
                                 }
 
                                 Return (Zero)
