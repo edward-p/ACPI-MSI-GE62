@@ -162,8 +162,8 @@ DefinitionBlock ("", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x0107200a)
     Name (TMF1, Zero)
     Name (TMF2, Zero)
     Name (TMF3, Zero)
-    Name (TTPF, Zero)
-    Name (DTPT, One)
+    Name (TTPF, One)
+    Name (DTPT, Zero)
     Name (TTDP, One)
     Name (TPMB, 0xFFFFFFFF)
     Name (TPMC, 0xFFFFFFFF)
@@ -34827,17 +34827,13 @@ DefinitionBlock ("", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x0107200a)
             {
                 Return (0x01013469)
             }
-            /*ElseIf ((TTDP == Zero))
+            ElseIf ((TTDP == Zero))
             {
                 Return (0x310CD041)
             }
             Else
             {
                 Return ("MSFT0101")
-            }*/
-            Else
-            {
-                Return (0x310CD041)
             }
         }
 
